@@ -4,6 +4,7 @@
 	width: 100%;
 	background-image: url("src/maccabi.jpg");
 	font-size: x-large;
+	font-weight: bold;
 }
 a:link{
 	color: white;

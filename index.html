@@ -208,7 +208,7 @@
 <br/>
 <br/>
 <input type="reset">
-<input type="submit" value="sendEmail" onclick="sendEmail()">
+<input type="button" value="send" onclick="sendEmail()">
 </form>
 <br/>
 <br/>
@@ -235,9 +235,11 @@ $(function(){
     let email = document.getElementById("mail");
     let message = document.getElementById("message");
     let smile = document.getElementById("smile");
-    let content = "mail: " + email + "\n message: " + message + "\n " + smile; 
-    
-    window.location.href = 'mailto:pryue13@walla.com?subject=Contact Us - WebSite Peretz Fartouk&body=$content';
+    let content = `Email: ${mail.value}\n
+    message: ${message.value}\n
+    smile: ${smile.value}`;
+
+    window.location.href = "mailto:pryue13@walla.com?subject=Contact Us - WebSite Peretz Fartouk&body=" + content;
   }
 </script>
 
