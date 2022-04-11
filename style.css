@@ -1,7 +1,45 @@
 #menu
 {
+	padding-top: 10px;
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	background: green;
+	font-size: x-large;
 }
+a:link{
+	color: white;
+}
+a:visited{
+	color: black;
+}
+hSection {
+	overflow: hidden;
+	text-align: center;
+  }
+  
+  hSection:before,
+  hSection:after {
+	background-color: #000;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+  }
+  
+  hSection:before {
+	right: 0.5em;
+	margin-left: -50%;
+  }
+  
+  hSection:after {
+	left: 0.5em;
+	margin-right: -50%;
+  }
+  
+  section{
+	overflow: hidden;
+	text-align: center;
+	
+  }
