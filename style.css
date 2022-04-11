@@ -41,5 +41,12 @@ hSection {
   section{
 	overflow: hidden;
 	text-align: center;
-	
+	font-size: x-large;
   }
+  
+  maccabi{
+	  color: white;
+	  background-color: green;
+	  font-size: xx-large;
+  }
+
