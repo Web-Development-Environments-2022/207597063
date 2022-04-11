@@ -2,7 +2,7 @@
 {
 	position: fixed;
 	width: 100%;
-	background: green;
+	background-image: url("src/maccabi.jpg");
 	font-size: x-large;
 }
 a:link{
@@ -19,22 +19,22 @@ hSection {
   
   hSection:before,
   hSection:after {
-	background-color: #000;
+	background-image: url("src/maccabi.jpg");
 	content: "";
 	display: inline-block;
-	height: 1px;
+	height: 10px;
 	position: relative;
 	vertical-align: middle;
 	width: 50%;
   }
   
   hSection:before {
-	right: 0.5em;
+	right: 10px;
 	margin-left: -50%;
   }
   
   hSection:after {
-	left: 0.5em;
+	left: 10px;
 	margin-right: -50%;
   }
   
@@ -42,11 +42,12 @@ hSection {
 	overflow: hidden;
 	text-align: center;
 	font-size: medium;
+	background-color: grey;
   }
   
   maccabi{
 	  color: white;
-	  background-color: green;
+	  background-image: url("src/maccabi.jpg");
 	  font-size: x-large;
   }
   regular{
