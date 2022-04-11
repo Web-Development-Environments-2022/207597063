@@ -189,35 +189,26 @@
 <br/>
 <br/>
 <br/>
-<form autocomplete="on" action= "mailto:pryue13@walla.com?subject=Contact Us - WebSite Peretz Fartouk" method="post"
-enctype="text/plain">
+<form autocomplete="on">
   Your mail 
-  <input type="email" name="Email" placeholder="your mail">
+  <input type="email" id="mail" name="Email" placeholder="your mail">
 <br/>
 <br/>
-<textarea name="Message" rows="5" cols="100" placeholder="your message"></textarea>
+<textarea id="message" name="Message" rows="5" cols="100" placeholder="your message"></textarea>
 <br/>
-<label>
-  <input type="radio" name="smile" value="regular" id="regular">
-  &#128512;
-</label>
-<label>
-  <input type="radio" name="smile" value="small" id="love">
-  &#128525;
-</label>
-<label>
-  <input type="radio" name="smile" value="small" id="star">
-  &#129321;
-</label>
-<label>
-  <input type="radio" name="smile" value="small" id="sleep">
-  &#128564;
-</label>
-?תרצו להוסיף סמיילי  
+<select id="smile">
+  <option value=""></option>
+  <option value="&#128512;">&#128512;</option>
+  <option value="&#128525;">&#128525;</option>
+  <option value="&#129321;">&#129321;</option>
+  <option value="&#128564;">&#128564;</option>
+</select>
+?תרצו להוסיף סמיילי
+
 <br/>
 <br/>
 <input type="reset">
-<input type="submit">
+<input type="submit" value="sendEmail" onclick="sendEmail()">
 </form>
 <br/>
 <br/>
@@ -238,6 +229,17 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script type="text/javascript">
+  function sendEmail() {
+    let email = document.getElementById("mail");
+    let message = document.getElementById("message");
+    let smile = document.getElementById("smile");
+    let content = "mail: " + email + "\n message: " + message + "\n " + smile; 
+    
+    window.location.href = 'mailto:pryue13@walla.com?subject=Contact Us - WebSite Peretz Fartouk&body=$content';
+  }
+</script>
 
 </body>
 </html>
