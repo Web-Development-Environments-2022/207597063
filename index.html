@@ -172,6 +172,68 @@
 <br/>
 <br/>
 <br/>
+<table border="1" align="center">
+  <tr>
+    <td>
+      <h1>web1</h1>
+    </td>
+    <td>
+      <h1>web2</h1>
+    </td>
+    <td>
+      <h1>web3</h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>בעיקר לקריאה בלבד</h4>
+    </td>
+    <td>
+      <h4>ניתן לקרוא ולכתוב</h4>
+    </td>
+    <td>
+      <h4>ניתן לקרוא ולכתוב</h4>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>מיקוד החברה</h4>
+    </td>
+    <td>
+      <h4>מיקוד הקהילה</h4>
+    </td>
+    <td>
+      <h4>מיקוד אישי</h4>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>בעלי תוכן</h4>
+    </td>
+    <td>
+      <h4>שיתוף תוכן</h4>  
+    </td>
+    <td>
+      <h4>איחוד תוכן</h4> 
+    </td>
+  </tr>
+</table>
+<br/>
+<h1> 
+<u>
+  :תרחיש שימוש של חיפוש תופעות לוואי של נורופן
+</u>
+</h1>
+.נצטרך להכניס את הכתובת המדוייקת :WEB1
+<br/>
+<br/>
+ .ניתן לבצע חיפוש במנוע החיפוש ובכך להגיע לדפים שבהם יש את המידע על תופעות הלוואי :WEB2
+<br/>
+<br/>
+ .גם כאן החיפוש יעשה ע"י מנוע חיפוש, אך הפעם נקבל את תוצאות המסמכים מדורגים לפי הרלוונטיות :WEB3
+ <br/>
+  .בנוסף, יתכן ויקפצו לנו פרסומות אשר יהיו קשורות לחיפוש שביצענו (ויטמינים, קופת חולים וכו'..)
+
 </section>
 
 <section id="contact" class="section">
@@ -236,8 +298,9 @@ $(function(){
     let message = document.getElementById("message");
     let smile = document.getElementById("smile");
     let content = `Email: ${mail.value}\n
-    message: ${message.value}\n
-    smile: ${smile.value}`;
+    message: ${message.value}\n 
+    ${smile.value}`;
+
 
     window.location.href = "mailto:pryue13@walla.com?subject=Contact Us - WebSite Peretz Fartouk&body=" + content;
   }
