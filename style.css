@@ -6,12 +6,7 @@
 	font-size: x-large;
 	font-weight: bold;
 }
-a:link{
-	color: white;
-}
-a:visited{
-	color: black;
-}
+
 hSection {
 	overflow: hidden;
 	text-align: center;
