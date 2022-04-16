@@ -27,11 +27,15 @@ hSection {
   hSection:before {
 	right: 10px;
 	margin-left: -50%;
+	opacity: 0.5;
+
   }
   
   hSection:after {
 	left: 10px;
 	margin-right: -50%;
+	opacity: 0.5;
+
   }
   
   section{
