@@ -2,7 +2,7 @@
 {
 	position: fixed;
 	width: 100%;
-	background-image: url("src/maccabi.jpg");
+	background-image: url("src/Backgrounds-menu.jpg");
 	font-size: x-large;
 	font-weight: bold;
 }
@@ -20,7 +20,7 @@ hSection {
   
   hSection:before,
   hSection:after {
-	background-image: url("src/maccabi.jpg");
+	background-image: url("src/Backgrounds-line.jpg");
 	content: "";
 	display: inline-block;
 	height: 10px;
@@ -43,7 +43,7 @@ hSection {
 	overflow: hidden;
 	text-align: center;
 	font-size: medium;
-	background-color: grey;
+	background-image: url("src/Backgrounds.jpg");
   }
   
   maccabi{
@@ -54,6 +54,17 @@ hSection {
   regular{
 	color: black;
 	font-size: medium;
+  }
+  #contact-style{
+	display: inline-block;
+	width: 55%;
+	border: 3px solid black;
+	box-sizing: border-box;
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+	font-size: medium;
+	background-image: url("src/Backgrounds-contant.jpg");
   }
 
 
